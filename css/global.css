@@ -1,0 +1,104 @@
+@import 'https://unpkg.com/open-props';
+@import './reset.css';
+@import './utilities.css';
+@import './fonts.css';
+
+:root {
+  --container-max-width: 64rem;
+  --container-max-width-narrow: 40rem;
+  --container-max-width-wide: 75rem;
+
+  --color-neutral-100: var(--gray-0);
+  --color-neutral-200: var(--gray-2);
+  --color-neutral-300: var(--gray-3);
+  --color-neutral-400: var(--gray-4);
+  --color-neutral-500: var(--gray-7);
+
+  --color-primary-100: var(--blue-1);
+  --color-primary-500: var(--blue-7);
+  --color-primary-900: var(--blue-12);
+
+  --body-font-family: 'open_sansregular';
+  --body-font-size: var(--size-3);
+
+  --heading-font-family: 'norwesterregular';
+
+  --heading-one-font-size: var(--size-fluid-5);
+
+  --site-header-padding: var(--size-1) 0;
+  --navigation-gap: var(--size-7);
+  --navigation-color: var(--color-neutral-100);
+  --navigation-color-hover: var(--color-primary-100);
+
+  --line-height: 1.6;
+}
+
+body {
+  font-family: var(--body-font-family);
+  color: var(--color-neutral-500);
+  line-height: var(--line-height);
+  font-size: var(--body-font-size);
+}
+
+:is(h1, h2, h3, h4, h5) {
+  line-height: 1.1;
+  color: var(--gray-9);
+  font-family: var(--heading-font-family);
+}
+
+h1 {
+  font-size: var(--heading-one-font-size);
+}
+
+h3 {
+  font-size: var(--size-7);
+}
+
+/* Header and navigation */
+
+.site-header {
+  color: var(--color-neutral-100);
+  background-color: var(--color-primary-900);
+  padding: var(--site-header-padding);
+}
+
+.site-header__inner {
+  display: flex;
+  gap: var(--size-3);
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: var(--size-12);
+}
+
+.nav {
+  display: none;
+  list-style: none;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  font-size: var(--navigation-font-size);
+  color: var(--navigation-color);
+  text-decoration: none;
+}
+
+.nav a:is(:hover, :focus) {
+  color: var(--navigation-color-hover);
+}
+
+@media (min-width: 45em) {
+  .site-header__inner {
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    gap: var(--navigation-gap);
+  }
+}

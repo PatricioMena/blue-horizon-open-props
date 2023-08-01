@@ -1,0 +1,45 @@
+/* Container */
+.container {
+  --padding: var(--size-3) * 2;
+  --max-width: var(--container-max-width);
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
+
+.container[data-type='narrow'] {
+  --max-width: var(--container-max-width-narrow);
+}
+.container[data-type='wide'] {
+  --max-width: var(--container-max-width-wide);
+}
+.container[data-type='full-bleed'] {
+  --max-width: 100%;
+}
+
+/* Even-columns */
+.even-columns {
+  display: grid;
+  gap: var(--grid-gap, 1.5rem);
+}
+
+@media (min-width: 45em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+/* Flow */
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+/* Flex group */
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--flex-column-gap);
+  row-gap: var(--flex-row-gap, calc(var(--flex-group-gap) / 2));
+  width: fit-content;
+  justify-content: center;
+}
