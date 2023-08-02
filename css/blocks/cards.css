@@ -1,0 +1,19 @@
+.card {
+  /* display: grid; */
+  /* gap: var(--card-flow-spacing); */
+  padding: var(--card-body-padding);
+
+  background-color: var(--card-background-default);
+  font-family: var(--card-font-family);
+  color: var(--card-color-default);
+  line-height: var(--card-line-height);
+  box-shadow: var(--card-shadow);
+  border-radius: var(--card-border-radius);
+  border: var(--card-border);
+}
+
+.card__heading {
+  font-family: var(--card-heading-font-family);
+  font-size: var(--card-heading-font-size);
+  color: var(--card-heading-color-default);
+}

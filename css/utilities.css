@@ -22,6 +22,10 @@
   gap: var(--grid-gap, 1.5rem);
 }
 
+.even-columns[data-type='translated'] {
+  transform: translateY(-140px);
+}
+
 @media (min-width: 45em) {
   .even-columns {
     grid-auto-flow: column;
@@ -38,8 +42,20 @@
 .flex-group {
   display: flex;
   flex-wrap: wrap;
-  column-gap: var(--flex-column-gap);
+  column-gap: var(--flex-group-gap);
   row-gap: var(--flex-row-gap, calc(var(--flex-group-gap) / 2));
   width: fit-content;
   justify-content: center;
+}
+
+.fs-500 {
+  font-size: var(--font-size-3);
+}
+
+.fs-600 {
+  font-size: var(--font-size-4);
+}
+
+.section {
+  padding-block: var(--section-padding-block);
 }

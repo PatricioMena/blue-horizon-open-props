@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="/css/global.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" data-type="header">
     <div class="container">
       <div class="site-header__inner">
         <img src="/images/logo.svg" alt="" class="logo"><a href="#"></a>
@@ -16,48 +16,70 @@
             <li><a href="About">About</a></li>
             <li><a href="Benefits">Benefits</a></li>
             <li><a href="services">Services</a></li>
+            <li><a href="services">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero section -->
     <div class="section">
       <div class="container">
         <div class="even-columns">
           <div class="flow" style="--flow-spacer: 1.5rem">
-            <h1>Reliable Transportation Solutions for Your Business</h1>
-            <p>We understand the importance of timely and reliable delivery, and that's why we pride ourselves on providing exceptional service to all of our customers</p>
+            <h1>Reliable transportation solutions for your business</h1>
+            <p class="fs-500">We understand the importance of timely and reliable delivery, and that's why we pride ourselves on providing exceptional service to all of our customers</p>
             <div class="flex-group">
-              <a href="#contact">Get quote</a>
-              <a href="#services">Our Services</a>
+              <a href="#services" class="button" data-type="primary">Our Services</a>
+              <a href="#contact" class="button" data-type="accent">Get quote</a>
             </div>
             <div>
-
             </div>
 
+          </div>
+          <div>
           </div>
 
         </div>
       </div>
     </div>
-
-    <!-- Stats section -->
-    <section>
+  </header>
+  <main>
+    <!-- Hero section
+    <div class="section" data-type="hero">
       <div class="container">
         <div class="even-columns">
+          <div class="flow" style="--flow-spacer: 1.5rem">
+            <h1>Reliable Transportation Solutions for Your Business</h1>
+            <p class="fs-500">We understand the importance of timely and reliable delivery, and that's why we pride ourselves on providing exceptional service to all of our customers</p>
+            <div class="flex-group">
+              <a href="#services" class="button" data-type="primary">Our Services</a>
+              <a href="#contact" class="button" data-type="accent">Get quote</a>
+            </div>
+            <div>
+            </div>
+
+          </div>
+          <div>
+          </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Stats section -->
+    <section class="section">
+      <div class="container">
+        <div class="even-columns" data-type="translated">
           <div class="card | flow">
-            <h3 class="card__heading">10+</h3>
-            <p>Years of experience in the transportation industry</p>
+            <h3 class="card__heading">10&#43;</h3>
+            <p>Years of experience in the industry</p>
           </div>
           <div class="card | flow">
-            <h3 class="card__heading">10,000+</h3>
+            <h3 class="card__heading">10,000&#43;</h3>
             <p>Successfully delivered shipments</p>
           </div>
           <div class="card | flow">
-            <h3 class="card__heading">98%</h3>
+            <h3 class="card__heading">98&#37;</h3>
             <p>Maintained on-time delivery rate</p>
           </div>
           <div class="card | flow">
