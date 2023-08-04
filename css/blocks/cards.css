@@ -17,3 +17,7 @@
   font-size: var(--card-heading-font-size);
   color: var(--card-heading-color-default);
 }
+
+.card[data-type='service__card'] {
+  paddding: 0;
+}

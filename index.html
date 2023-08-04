@@ -5,32 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Horizon Logistics</title>
   <link rel="stylesheet" href="/css/global.css">
+
 </head>
 <body>
-  <header class="site-header" data-type="header">
+  <header class="site-header">
     <div class="container">
       <div class="site-header__inner">
         <img src="/images/logo.svg" alt="" class="logo"><a href="#"></a>
         <nav class="primary-navigation">
           <ul class="nav">
-            <li><a href="About">About</a></li>
-            <li><a href="Benefits">Benefits</a></li>
+            <li><a href="Benefits">Tracking</a></li>
             <li><a href="services">Services</a></li>
+            <li><a href="About">About</a></li>
             <li><a href="services">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" data-type="hero">
       <div class="container">
         <div class="even-columns">
           <div class="flow" style="--flow-spacer: 1.5rem">
-            <h1>Reliable transportation solutions for your business</h1>
-            <p class="fs-500">We understand the importance of timely and reliable delivery, and that's why we pride ourselves on providing exceptional service to all of our customers</p>
+            <h1>On-Time Delivery and Expert Care</h1>
+            <p class="fs-500">24/7 Customer support: Ensuring your peace of mind every step of the way</p>
             <div class="flex-group">
-              <a href="#services" class="button" data-type="primary">Our Services</a>
-              <a href="#contact" class="button" data-type="accent">Get quote</a>
+              <a href="#services" class="button" data-type="primary">Schedule in 5 minutes</a>
+              <a href="#contact" class="button" data-type="accent">Talk to an expert</a>
             </div>
             <div>
             </div>
@@ -67,22 +68,22 @@
     </div> -->
 
     <!-- Stats section -->
-    <section class="section">
+    <section class="section" data-type="translated">
       <div class="container">
-        <div class="even-columns" data-type="translated">
-          <div class="card | flow">
+        <div class="even-columns">
+          <div class="card | flow" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">10&#43;</h3>
             <p>Years of experience in the industry</p>
           </div>
-          <div class="card | flow">
+          <div class="card | flow" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">10,000&#43;</h3>
             <p>Successfully delivered shipments</p>
           </div>
-          <div class="card | flow">
+          <div class="card | flow" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">98&#37;</h3>
             <p>Maintained on-time delivery rate</p>
           </div>
-          <div class="card | flow">
+          <div class="card | flow" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">24/7</h3>
             <p>Customer support availability</p>
           </div>
@@ -90,22 +91,81 @@
       </div>
     </section>
 
-    <!-- Services section -->
-    <section class="section">
+    <!-- About section -->
+    <section class="section" data-type="about">
       <div class="container">
         <div class="even-columns">
-          <div class="">
-            <p>Wide Range of Solutions!</p>
-            <h2>Delivered on Time and in Perfect Condition</h2>
+          <div class="flow my-auto">
+            <h3 class="heading-tertiary">About Us</h3>
+            <h2 class="heading-secondary">Delivered on Time and in Perfect Condition</h2>
+            <p>With our team of experienced professionals and state-of-the-art equipment, we ensure that your cargo is always in good hands. Our commitment to on-time delivery and our track record of successful deliveries have made us a trusted name in the industry.</p>
+            <p>We strive to offer our customers competitive pricing without sacrificing the quality of our services. We believe in providing excellent customer service, and our team is always available to assist you with your transportation needs.</p>
           </div>
-          <div class="even-columns">
-            <div class="card | flow">
-              <div><img src="#" alt="A full truckload shipping"></div>
-              <h3 class="card__heading">Full truckload shipping</h3>
-              <p>Ideal for businesses that need to move large quantities of goods or cargo that cannot be transported using less-than-truckload (LTL) shipping</p>
+          <div class="grid | gallery">
+            <img class="photo-one circle" src="./images/shipping-container.jpg" alt="">
+            <img class="photo-two" src="/images/truck-parking.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features section -->
+    <section class="section" data-type="features">
+      <div class="container">
+        <div class="even-columns">
+          <div class="flow my-auto">
+            <h3 class="heading-tertiary">About Us</h3>
+            <h2 class="heading-secondary">Delivered on Time and in Perfect Condition</h2>
+            <p>With our team of experienced professionals and state-of-the-art equipment, we ensure that your cargo is always in good hands. Our commitment to on-time delivery and our track record of successful deliveries have made us a trusted name in the industry.</p>
+            <p>We strive to offer our customers competitive pricing without sacrificing the quality of our services. We believe in providing excellent customer service, and our team is always available to assist you with your transportation needs.</p>
+          </div>
+          <div class="grid | gallery">
+            <img class="photo-one circle" src="./images/shipping-container.jpg" alt="">
+            <img class="photo-two" src="/images/truck-parking.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services section -->
+    <section class="section" data-type="services">
+      <div class="container">
+        <div>
+          <header class="flow | m-block-end-8">
+            <h3 class="heading-tertiary">Wide Range of Solutions!</h3>
+            <h2 class="heading-secondary">Delivered on Time and in Perfect Condition</h2>
+          </header>
+          <div class="even-columns mt-5">
+            <div class="card | flow" style="--flow-spacer:2rem" data-type="services-card">
+              <img src="/images/full-truckload.jpg" alt="A full truckload shipping">
+              <div class="flow" style="--flow-spacer: 1.5em">
+                <h3 class="fs-500">Full Truckload (FTL)</h3>
+                <p>Ideal for businesses that need to move large quantities of goods or cargo that cannot be transported using less-than-truckload (LTL) shipping</p>
+              </div>
+              <button class="button |  shadow" data-type="primary"> Button</button>
+            </div>
+            <div class="card | flow" style="--flow-spacer:2rem" data-type="services-card">
+
+              <img src="/images/less-than-truckload.jpg" alt="A Less-than truckload shipping">
+              <div class="flow" style="--flow-spacer: 1.5em">
+                <h3 class="fs-500">Less-than-Truckload (LTL)</h3>
+                <p>We offer cost-effective LTL shipping services for businesses that need to transport smaller quantities of goods. With a range of value-added services</p>
+              </div>
+              <button class=" button | shadow" data-type="primary">Button</button>
+            </div>
+            <div class="card | flow" style="--flow-spacer:2rem" data-type="services-card">
+              <img src="./images/warehouse.jpg" alt="A warehouse">
+              <div class="flow" style="--flow-spacer: 1.5em">
+                <h3 class="fs-500">Warehousing &amp; Distribution</h3>
+                <p>We provide businesses with a flexible, cost-effective solution for their storage and distribution needs. Offering a range of warehousing options</p>
+              </div>
+              <button class=" button | shadow" data-type="primary">Button</button>
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
 

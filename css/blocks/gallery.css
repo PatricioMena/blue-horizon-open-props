@@ -1,0 +1,35 @@
+.gallery {
+  background-color: rgb(165, 216, 255);
+  aspect-ratio: var(--ratio-box);
+  background-image: linear-gradient(rgba(231, 245, 255, 0.5), rgba(231, 245, 255, 0.5)),
+    url(/images/containers.jpg);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+
+  color: rgb(231, 245, 255);
+}
+
+.gallery img:first-child {
+  aspect-ratio: var(--ratio-golden);
+  grid-column: 1 / 6;
+  grid-row: 1 / 5;
+  transform: translateX(-16px);
+  z-index: 20;
+}
+
+.gallery img:last-child {
+  grid-column: 3 / 7;
+  grid-row: 4 / 7;
+  transform: translateX(16px) translateY(16px);
+  z-index: 10;
+}
+
+@media (min-width: 45em) {
+  .photo-two {
+    grid-column: 3 / 7;
+    grid-row: 4 / 7;
+  }
+}

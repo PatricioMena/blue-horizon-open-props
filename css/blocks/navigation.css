@@ -1,0 +1,67 @@
+.site-header {
+  color: var(--color-neutral-200);
+  /* background-color: var(--color-primary-700); */
+  padding: var(--site-header-padding);
+}
+
+.site-header__inner {
+  display: flex;
+  gap: var(--size-400);
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: var(--size-11);
+}
+
+.nav {
+  display: none;
+  list-style: none;
+}
+
+.nav {
+  display: none;
+}
+
+.nav a {
+  font-size: var(--navigation-font-size);
+  color: var(--navigation-color);
+  font-weight: var(--navigation-font-weight);
+  text-decoration: none;
+  transition: color 200ms ease-out;
+}
+
+.nav a:is(:hover, :focus) {
+  color: var(--navigation-color-hover);
+}
+
+@media (min-width: 45em) {
+  .site-header__inner {
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    gap: var(--navigation-gap);
+  }
+}
+
+.site-header {
+  background: linear-gradient(rgba(20, 85, 145, 0.8), rgba(13, 55, 94, 0.8)), url(/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 45em) {
+  .site-header {
+    background-image: linear-gradient(
+        105deg,
+        rgba(20, 85, 145, 0.8) 0,
+        rgba(13, 55, 94, 0.8) 55%,
+        transparent 56%
+      ),
+      url(/images/hero.jpg);
+  }
+}

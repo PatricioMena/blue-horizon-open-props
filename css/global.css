@@ -1,9 +1,10 @@
 @import 'https://unpkg.com/open-props';
+@import 'https://unpkg.com/open-props/anximations.min.css';
 @import './reset.css';
-@import './utilities.css';
-@import './blocks/buttons.css';
-@import './blocks/cards.css';
+
+@import './blocks/blocks.css';
 @import './fonts.css';
+@import './utilities.css';
 
 :root {
   /* /// Fonts /// */
@@ -16,7 +17,7 @@
   --fs-600: var(--font-size-4);
   --fs-700: var(--font-size-5);
   --fs-800: var(--font-size-6);
-  --fs-900: var(--font-size-7);
+  --fs-900: clamp(var(--font-size-5), 3vw + 1rem, var(--font-size-6));
   --size-xl: clamp(var(--font-size-7), 4vw + 1rem, var(--font-size-8));
 
   --body-font-size: var(--fs-400);
@@ -29,6 +30,7 @@
   --body-line-height: 1.6;
   --heading-line-height: 1.1;
 
+  --body-font-color: var(--color-neutral-500);
   /* /// Spacing /// */
   --size-200: var(--size-1);
   --size-300: var(--size-2);
@@ -37,7 +39,7 @@
   --size-600: var(--size-9);
 
   /* /// Layout /// */
-  --hero-padding-block: clamp(15rem, 15vh, 20rem);
+  --hero-padding-block: clamp(9rem, 15vh, 20rem);
   --section-padding-block: clamp(5rem, 10vh, 6rem);
   --flex-group-gap: var(--size-400);
 
@@ -66,7 +68,7 @@
   --color-primary-800: var(--blue-10);
   --color-primary-900: var(--blue-12);
 
-  --color-secontary-100: #f4f8fa;
+  --color-secondary-100: #f4f8fa;
   --color-secondary-400: #90b4ce;
   --color-secondary-500: #82a2b9;
   --color-secondary-600: #6c879b;
@@ -75,17 +77,17 @@
   /*/// Navigation /// */
   --site-header-padding: var(--size-1) 0;
   --navigation-gap: var(--size-7);
-  --navigation-color: var(--color-primary-900);
+  --navigation-color: var(--color-neutral-900);
   --navigation-color-hover: var(--color-primary-700);
-  --navigation-font-weight: 500;
+  --navigation-font-weight: 400;
 
-  /*/// Buttons /// */
+  /*/ // Buttons /// */
   --button-font-family: var(--body-font-family);
   --button-font-size: var(--fs-400);
   --button-text-transform: none;
   --button-padding: 1em 2em;
   --button-border: 0;
-  --button-border-radius: 0;
+  --button-border-radius: 0px;
   --button-font-weight: medium;
   --button-box-shadow: var(--shadow-3);
 
@@ -113,6 +115,10 @@
   --card-heading-color-default: var(--color-primary-500);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--body-font-family);
   color: var(--body-font-color);
@@ -122,7 +128,6 @@ body {
 
 :is(h1, h2, h3, h4, h5) {
   line-height: var(--heading-line-height);
-  color: var(--gray-9);
   font-family: var(--heading-font-family);
 }
 
@@ -131,76 +136,24 @@ h1 {
   color: var(--color-neutral-100);
 }
 
+h2 {
+  color: var(--color-neutral-900);
+}
+
 h3 {
-  font-size: var(--size-7);
+  font-size: var(--font-size-2);
 }
 
 /* Header and navigation */
 
-.site-header {
-  color: var(--color-neutral-200);
-  /* background-color: var(--color-primary-700); */
-  padding: var(--site-header-padding);
+.section {
+  padding-block: var(--section-padding-block);
 }
 
-.site-header__inner {
-  display: flex;
-  gap: var(--size-400);
-  align-items: center;
-  justify-content: center;
+.section[data-type='translated'] {
+  transform: translateY(-80px);
+  padding-block: 0;
 }
-
-.logo {
-  width: var(--size-11);
-}
-
-.nav {
-  display: none;
-  list-style: none;
-}
-
-.nav {
-  display: none;
-}
-
-.nav a {
-  font-size: var(--navigation-font-size);
-  color: var(--navigation-color);
-  font-weight: var(--navigation-font-weight);
-  text-decoration: none;
-  transition: color 200ms ease-out;
-}
-
-.nav a:is(:hover, :focus) {
-  color: var(--navigation-color-hover);
-}
-
-@media (min-width: 45em) {
-  .site-header__inner {
-    justify-content: space-between;
-  }
-
-  .nav {
-    display: flex;
-    gap: var(--navigation-gap);
-  }
-}
-
-.site-header[data-type='header'] {
-  background: linear-gradient(rgba(20, 85, 145, 0.8), rgba(13, 55, 94, 0.8)), url(/images/hero.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media (min-width: 45em) {
-  .site-header[data-type='header'] {
-    background-image: linear-gradient(
-        105deg,
-        rgba(20, 85, 145, 0.8) 0,
-        rgba(13, 55, 94, 0.8) 53%,
-        transparent 54%
-      ),
-      url(/images/hero.jpg);
-  }
+.section[data-type='hero'] {
+  padding-block: var(--hero-padding-block);
 }

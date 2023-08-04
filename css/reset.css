@@ -51,6 +51,10 @@ picture {
   display: block;
 }
 
+p {
+  max-width: 28em;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,
