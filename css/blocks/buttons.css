@@ -5,7 +5,8 @@
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  line-height: 1;
+  /* line-height: 1; */
+  height: var(--button-height);
   font-family: var(--button-font-family);
   font-size: var(--button-font-size);
   text-transform: var(--button-text-transform);
@@ -20,6 +21,7 @@
 @media (min-width: 45em) {
   .button {
     display: inline-flex;
+    flex-grow: 0;
   }
 }
 
@@ -39,4 +41,15 @@
 
 .button[data-type='accent']:is(:hover, :focus) {
   background-color: var(--button-accent-background-hover);
+}
+
+.button[data-type='primary-small'] {
+  padding: 0.625rem 1.25rem;
+  font-size: 14px;
+  background-color: var(--button-primary-background);
+  color: var(--button-primary-color);
+}
+
+.button[data-type='primary-small']:is(:hover, :focus) {
+  background-color: var(--button-primary-background-hover);
 }

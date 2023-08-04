@@ -1,0 +1,19 @@
+.switcher {
+  --threshold: 30rem;
+  --space: 1rem;
+  --large: calc(1 + 7 / 10);
+}
+
+.switcher > * {
+  display: flex;
+  flex-wrap: wrap;
+  /* ↓ Multiply by -1 to make negative */
+  margin: calc(var(--space) / 2 * -1);
+}
+
+.switcher > * > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--threshold) - (100% - var(--space))) * 999);
+  /* ↓ Half the value to each element, combining to make the whole */
+  margin: calc(var(--space) / 2);
+}

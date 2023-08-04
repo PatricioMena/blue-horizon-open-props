@@ -65,6 +65,10 @@
   font-size: var(--font-size-2);
   color: var(--color-primary-500);
 }
+.heading {
+  font-size: var(--font-size-2);
+  color: var(--color-primary-500);
+}
 
 /* Font Size */
 .fs-500 {
@@ -95,4 +99,49 @@
 
 .m-block-end-8 {
   margin-block-end: var(--size-8);
+}
+
+.m-bottom-7 {
+  margin-bottom: var(--size-7);
+}
+
+/* Text align */
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Text color */
+.text-neutral-100 {
+  color: var(--color-neutral-100);
+}
+.text-neutral-300 {
+  color: var(--color-neutral-300);
+}
+
+.text-brand-200 {
+  color: var(--color-primary-200);
+}
+
+.text-brand-500 {
+  color: var(--color-primary-500);
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: var(--justify-content, center);
+}
+
+/* Backgrounds */
+
+.bg-neutral-100 {
+  background-color: var(--color-neutral-100);
+}
+
+.bg-primary-500 {
+  background-color: var(--color-primary-900);
 }

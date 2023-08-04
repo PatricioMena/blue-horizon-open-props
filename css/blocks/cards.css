@@ -18,6 +18,26 @@
   color: var(--card-heading-color-default);
 }
 
-.card[data-type='service__card'] {
-  paddding: 0;
+.card[data-type='services-card'] {
+  overflow: hidden;
+  border-radius: var(--radius-2);
+  padding: 0;
+  background: #fff;
+}
+
+.card__content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.card[data-type='features-card'] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: var(--ratio-square);
+  padding: var(--size-400);
+  background: rgba(248, 249, 250, 0.1);
+  backdrop-filter: blur(4px);
+  border: none;
+  box-shadow: var(--shadow-3);
 }

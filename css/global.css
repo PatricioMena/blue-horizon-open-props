@@ -1,8 +1,10 @@
 @import 'https://unpkg.com/open-props';
-@import 'https://unpkg.com/open-props/anximations.min.css';
+@import 'open-props/colors-hsl';
 @import './reset.css';
 
 @import './blocks/blocks.css';
+@import './layouts/layouts.css';
+
 @import './fonts.css';
 @import './utilities.css';
 
@@ -27,7 +29,7 @@
   --body-font-family: 'ibm_plex_sansregular';
   --heading-font-family: 'ibm_plex_sans_condensedbold';
 
-  --body-line-height: 1.6;
+  --body-line-height: 1.5;
   --heading-line-height: 1.1;
 
   --body-font-color: var(--color-neutral-500);
@@ -74,6 +76,8 @@
   --color-secondary-600: #6c879b;
   --color-secondary-900: #323f48;
 
+  --color-accent-400: var(--color-orange-8)
+
   /*/// Navigation /// */
   --site-header-padding: var(--size-1) 0;
   --navigation-gap: var(--size-7);
@@ -85,10 +89,10 @@
   --button-font-family: var(--body-font-family);
   --button-font-size: var(--fs-400);
   --button-text-transform: none;
-  --button-padding: 1em 2em;
+  --button-padding: 0.75rem 1.25rem;
   --button-border: 0;
-  --button-border-radius: 0px;
-  --button-font-weight: medium;
+  --button-border-radius: var(--radius-1);
+  --button-font-weight: 500;
   --button-box-shadow: var(--shadow-3);
 
   --button-primary-color: var(--color-neutral-100);
@@ -105,9 +109,9 @@
   --card-background-default: var(--color-neutral-100);
   --card-color-default: var(--body-font-color);
   --card-font-family: var(--body-font-family);
-  --card-line-height: 1.25;
+  --card-line-height: 1.5;
   --card-shadow: var(--shadow-2);
-  --card-border-radius: var(--radius-0);
+  --card-border-radius: var(--radius-1);
   --card-border: var(--border-size-1) solid var(--color-neutral-100);
 
   --card-heading-font-size: var(--fs-800);
@@ -142,18 +146,7 @@ h2 {
 
 h3 {
   font-size: var(--font-size-2);
+  color: var(--color-neutral-900);
 }
 
 /* Header and navigation */
-
-.section {
-  padding-block: var(--section-padding-block);
-}
-
-.section[data-type='translated'] {
-  transform: translateY(-80px);
-  padding-block: 0;
-}
-.section[data-type='hero'] {
-  padding-block: var(--hero-padding-block);
-}

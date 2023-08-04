@@ -1,0 +1,21 @@
+.section {
+  padding-block: var(--section-padding-block);
+}
+
+.section[data-type='translated'] {
+  transform: translateY(-80px);
+  padding-block: 0;
+}
+
+.section[data-type='hero'] {
+  padding-block: var(--hero-padding-block);
+}
+.section[data-type='features'] {
+  background: linear-gradient(rgba(13, 55, 94, 0.8), rgba(13, 55, 94, 0.8)),
+    url(/images/container-ship.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: static;
+  /* background-attachment: fixed; */
+}
