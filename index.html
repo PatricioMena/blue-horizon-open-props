@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Horizon Logistics</title>
   <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script defer src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+  <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+
 </head>
 <body>
   <header class="site-header">
@@ -71,19 +74,19 @@
     <section class="section" data-type="translated">
       <div class="container">
         <div class="even-columns">
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
+          <div class="card | flow text-center" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">10&#43;</h3>
             <p>Years of experience in the industry</p>
           </div>
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
+          <div class="card | flow text-center" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">10,000&#43;</h3>
             <p>Successfully delivered shipments</p>
           </div>
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
+          <div class="card | flow text-center" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">98&#37;</h3>
             <p>Maintained on-time delivery rate</p>
           </div>
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
+          <div class="card | flow text-center" style="--flow-spacer: 0.5rem">
             <h3 class="card__heading">24/7</h3>
             <p>Customer support availability</p>
           </div>
@@ -108,7 +111,6 @@
         </div>
       </div>
     </section>
-
 
     <!-- Services section -->
     <section class="section | bg-neutral-100" data-type="services">
@@ -156,7 +158,6 @@
       </div>
     </section>
 
-
     <!-- Features section -->
     <section class="section | bg-primary-500" data-type="features">
       <div class="container">
@@ -175,7 +176,6 @@
 
           <div class=" switcher | flow">
             <div class="text-center">
-
               <div class="card | flow text-neutral-100" style="--flow-spacer: 0.5rem" data-type="features-card">
                 <lord-icon src="https://cdn.lordicon.com/eexszoni.json" trigger="hover" colors="primary:#c74b16,secondary:#c74b16" style="width:100px;height:100px">
                 </lord-icon>
@@ -212,7 +212,7 @@
                 <h4 class="fs-500 text-neutral-100">
                   Real-Time Tracking
                 </h4>
-                <p class="text-neutral-300">Stay Informed Every Step of the Way</p>
+                <p class="text-neutral-300">Stay Informed every step of the way</p>
               </div>
             </div>
 
@@ -221,44 +221,224 @@
       </div>
     </section>
 
-    <!-- About section -->
-    <section class="section" data-type="about">
+    <!-- Tracking section -->
+    <section class="section" data-type="tracking">
       <div class="container">
         <div class="even-columns">
           <div class="flow my-auto">
-            <h3 class="heading-tertiary">About Us</h3>
-            <h2 class="heading-secondary">Delivered on Time and in Perfect Condition</h2>
-            <p>With our team of experienced professionals and state-of-the-art equipment, we ensure that your cargo is always in good hands. Our commitment to on-time delivery and our track record of successful deliveries have made us a trusted name in the industry.</p>
-            <p>We strive to offer our customers competitive pricing without sacrificing the quality of our services. We believe in providing excellent customer service, and our team is always available to assist you with your transportation needs.</p>
-          </div>
-          <div class="grid | gallery">
-            <img class="photo-one circle" src="./images/shipping-container.jpg" alt="">
-            <img class="photo-two" src="/images/truck-parking.jpg" alt="">
-          </div>
-        </div>
+            <div class="flow m-bottom-7">
+              <h3 class="heading-tertiary">Tracking and Logistics</h3>
+              <h2 class="heading-secondary">Streamline Your Shipping Experience</h2>
+            </div>
+            <div class="flow" style="--flow-spacer: 1.5rem">
+              <div>
+                <h5 class="fs-500">Tracking Solutions</h5>
+                <ul class="flow list" style="--flow-spacer: 0.5rem" role="list">
+                  <li class="flex" style="--justify-content: start"><i class="ph-duotone ph-check-square"></i> Real-time shipment tracking</li>
+                  <li class="flex" style="--justify-content: start"><i class="ph-duotone ph-check-square"></i> Automated Notifications</li>
+                  <li class="flex" style="--justify-content: start"><i class="ph-duotone ph-check-square"></i> Supply Chain Visibility</li>
+                </ul>
+              </div>
 
-        <div class="even-columns">
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
-            <h3 class="card__heading">10&#43;</h3>
-            <p>Years of experience in the industry</p>
+              <div>
+                <h5 class="fs-500">Software Solutions</h5>
+                <ul class="flow list" style="--flow-spacer: 0.5rem" role="list">
+                  <li class="flex"><i class="ph-duotone ph-check-square"></i>Transportation managment system</li>
+                  <li class="flex"><i class="ph-duotone ph-check-square"></i>Fleet tracking software</li>
+                  <li class="flex"><i class="ph-duotone ph-check-square"></i>Electronic data interchange</li>
+                  <li class="flex"><i class="ph-duotone ph-check-square"></i>Warehouse managment system</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
-            <h3 class="card__heading">10&#43;</h3>
-            <p>Years of experience in the industry</p>
-          </div>
-
-          <div class="card | flow" style="--flow-spacer: 0.5rem">
-            <h3 class="card__heading">10&#43;</h3>
-            <p>Years of experience in the industry</p>
+          <div class="tracking__image">
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials section -->
+    <section class="section | bg-primary-500" data-type="testimonials">
+      <div class="container" data-type="narrow">
+        <div>
+          <div class="my-auto">
+            <header class="flow m-bottom-8 text-center">
+              <h3 class="heading-tertiary text-brand-200">Hear What Our Clients Have To Say</h3>
+              <h2 class="heading-secondary | text-neutral-100">Discover How We Transformed Their Logistics Experience</h2>
+            </header>
+          </div>
+
+          <div class="container">
+            <div class="swiper mx-auto">
+              <div class="swiper-wrapper">
+                <figure class="testimonial swiper-slide | text-center flex flow text-neutral-300">
+                  <img class="testimonial__image border-round mx-auto" src="./images/customers/customer-1.jpg" alt="" width="112" height="112">
+                  <blockquote>
+                    <p class="fs-500 mx-auto">As a procurement manager, I've dealt with numerous freight companies, but blue horizon stands out from the rest. Their real-time shipment tracking ensures complete visibility, allowing us to make informed decisions. Kudos to their exceptional service!</p>
+                  </blockquote>
+                  <figcaption>
+                    <p class="text-brand-200 mx-auto">Sarah Johnson, Procurement Manager at</p>
+                    <p class="mx-auto">Delta Manufacturing</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="testimonial swiper-slide | text-center flex flow text-neutral-300">
+                  <img class="testimonial__image border-round mx-auto" src="./images/customers/customer-4.jpg" alt="" width="112" height="112">
+                  <blockquote>
+                    <p class="fs-500 mx-auto">I can't imagine running our e-commerce business without the supply chain visibility provided by Blue Horizon. Their tracking system and insightful analytics have helped us optimize inventory management and boost our bottom line.</p>
+                  </blockquote>
+                  <figcaption>
+                    <p class="text-brand-200 mx-auto">Michael Davis, Founder at</p>
+                    <p class="mx-auto">OnlineMart.com</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="testimonial swiper-slide | text-center flex flow text-neutral-300">
+                  <img class="testimonial__image border-round mx-auto" src="./images/customers/customer-7.jpg" alt="" width="112" height="112">
+                  <blockquote>
+                    <p class="fs-500 mx-auto">We've been partnering with Blue Horizon for years, and they have consistently exceeded our expectations. Their tracking logistics and automated notifications have streamlined our operations, saving us time and money.</p>
+                  </blockquote>
+                  <figcaption>
+                    <p class="text-brand-200 mx-auto">Emily Thompson, Operations Manager at</p>
+                    <p class=" mx-auto">Globe Pharma</p>
+                  </figcaption>
+                </figure>
+
+                <figure class="testimonial swiper-slide | text-center flex flow text-neutral-300">
+                  <img class="testimonial__image border-round mx-auto" src="./images/customers/customer-12.jpg" alt="" width="112" height="112">
+                  <blockquote>
+                    <p class="fs-500 mx-auto">Thanks to Blue Horizon's robust tracking system, we have gained complete control over our international shipments. Their real-time updates and supply chain visibility have eliminated guesswork and improved our customer satisfaction.</p>
+                  </blockquote>
+                  <figcaption>
+                    <p class="text-brand-200 mx-auto">Thomas Rodriguez, Export Manager at</p>
+                    <p class=" mx-auto">Airborne Logistics</p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA section -->
+    <section class="section">
+      <div class="container">
+        <div class="section | bg-primary-500 border-radius-md shadow-lg" data-type="cta">
+          <div class="even-columns" style="--grid-auto-columns: 1.5fr 1fr">
+            <div class="flow flex" style="--flex-direction: column; --align-items: start">
+              <h2 class="heading-secondary text-accent-100">On-Time Delivery, Every Time. Experience it Now!</h2>
+              <p class="text-neutral-100 fs-500">Request a quote or contact us today to get started</p>
+            </div>
+            <div class="flex" style="--justify-content: center; --flex-gap: 1rem">
+              <button class="button" data-type="primary">Get Your Quote</button>
+              <button class="button" data-type="accent">Contact Us</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us section -->
+    <section class="section">
+      <div class="container">
+        <div class="even-columns">
+          <header class="flow | m-block-end-8 ">
+            <h3 class="heading-tertiary">We're Here to Assist You!</h3>
+            <h2 class="heading-secondary">Contact Us for All Your Freight and Transportation Needs</h2>
+          </header>
+          <div class="">
+            <div class="py-5 flow line-bottom">
+              <h5 class="fs-450">Address</h5>
+              <address>
+                <p>123 West 81st Street</p>
+                <p>Apartment 5A</p>
+                <p>New York, NY 10024</p>
+              </address>
+            </div>
+            <div class="py-5 flow line-bottom">
+              <h5 class="fs-450">Email</h5>
+              <address>
+                <span class="flex"><i class="ph-duotone ph-envelope border-round"></i><a class="address__link" href="mailto:contact@bluehorizonlogistics.com">contact@bluehorizonlogistics.com</a></span>
+              </address>
+            </div>
+
+            <div class="py-5 flow">
+              <h5 class="fs-450">Phone</h5>
+              <address>
+                <span class="flex"><i class="ph-duotone ph-phone border-round"></i><a class="address__link" href="tel:+13118675309">(311) 867-5309</a></span>
+              </address>
+            </div>
+          </div>
+          <form class="flow m-top-5 " action="/contactForm" style="--flow-spacer: 1.25rem">
+            <div>
+              <label class="form__label | m-bottom-2" for="contactName">Name
+              </label>
+              <input class="form__control" type="text" name="contactName" id="contactName" required>
+            </div>
+            <div class="m-bottom-3">
+              <label class="form__label | m-bottom-2" for="email">Email
+              </label>
+              <input class="form__control" type="text" name="email" id="email" required>
+            </div>
+
+            <div class="m-bottom-3">
+              <label class="form__label | m-bottom-2" for="message">Message
+              </label>
+              <textarea class="form__control" rows="5" name="message" id="message"></textarea>
+            </div>
+            <div>
+              <button class="button" data-type="primary">Submit</button>
+            </div>
+
+
+
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section | bg-primary-500">
+      <div class="container">
+        <div class="even-columns text-neutral-400">
+          <div class="flex">
+            <img class="logo" src="/images/logo.svg" alt="Blue horizon logo">
+          </div>
+          <div class="flow" style="--flow-spacer: 1rem">
+            <h6 class="fs-450 text-neutral-100">Careers</h6>
+            <a class="footer__link">Driving Academy</a>
+            <a class="footer__link">Become a carrier</a>
+            <a class="footer__link">Drivers</a>
+            <a class="footer__link">Our Culture</a>
+          </div>
+          <div class="flow" style="--flow-spacer: 1rem">
+            <h6 class="fs-450 text-neutral-100">About Us</h6>
+            <a class="footer__link">Investors</a>
+            <a class="footer__link">Safety</a>
+            <a class="footer__link">Sustainability</a>
+            <a class="footer__link">Who We Are</a>
+          </div>
+          <div class="flow" style="--flow-spacer: 1rem">
+            <h6 class="fs-450 text-neutral-100">Resources</h6>
+            <a class="footer__link">Tracking</a>
+            <a class="footer__link">Tariffs</a>
+            <a class="footer__link">Software</a>
+            <a class="footer__link">Data Solutions</a>
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
 
   </main>
 
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="/main.js"></script>
 </body>
 </html>

@@ -16,6 +16,36 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: static;
-  /* background-attachment: fixed; */
+}
+
+.section[data-type='tracking'] {
+  background: url(/images/world-map.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section[data-type='testimonials'] {
+  background: linear-gradient(rgba(13, 55, 94, 1), rgba(13, 55, 94, 0.9)),
+    url(/images/testimonial-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tracking__image {
+  background: linear-gradient(rgba(199, 75, 22, 0.2), rgba(199, 75, 22, 0.2)),
+    url(/images/tracking.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--radius-blob-1);
+}
+
+.section[data-type='cta'] {
+  background-image: url(/images/Hexagon.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-inline: var(--section-padding-inline);
 }

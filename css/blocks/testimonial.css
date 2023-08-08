@@ -1,0 +1,25 @@
+.testimonial {
+  --flex-gap: 0rem;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.testimonial p {
+  line-height: 1.7;
+}
+
+.testimonial p::before {
+  content: '\201C';
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  font-size: 10rem;
+  color: var(--color-accent-100);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.testimonial__image {
+  border: var(--border-size-3) solid var(--color-accent-300);
+}

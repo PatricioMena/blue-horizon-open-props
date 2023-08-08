@@ -1,0 +1,10 @@
+.footer__link {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  transition: color 250ms ease-out;
+}
+
+.footer__link:is(:hover, :focus) {
+  color: var(--color-accent-400);
+}

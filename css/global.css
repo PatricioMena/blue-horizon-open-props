@@ -1,12 +1,12 @@
 @import 'https://unpkg.com/open-props';
 @import 'open-props/colors-hsl';
-@import './reset.css';
 
 @import './blocks/blocks.css';
 @import './layouts/layouts.css';
 
 @import './fonts.css';
 @import './utilities.css';
+@import './reset.css';
 
 :root {
   /* /// Fonts /// */
@@ -42,7 +42,8 @@
 
   /* /// Layout /// */
   --hero-padding-block: clamp(9rem, 15vh, 20rem);
-  --section-padding-block: clamp(5rem, 10vh, 6rem);
+  --section-padding-block: clamp(5rem, 12vh, 7rem);
+  --section-padding-inline: clamp(1.5rem, 10vw, 3rem);
   --flex-group-gap: var(--size-400);
 
   /* Containers width */
@@ -76,7 +77,12 @@
   --color-secondary-600: #6c879b;
   --color-secondary-900: #323f48;
 
-  --color-accent-400: var(--color-orange-8)
+  --color-accent-100: var(--orange-3);
+  --color-accent-200: var(--orange-4);
+  --color-accent-300: var(--orange-5);
+  --color-accent-400: var(--orange-7);
+  --color-accent-500: var(--orange-9);
+  --color-accent-600: var(--orange-11);
 
   /*/// Navigation /// */
   --site-header-padding: var(--size-1) 0;
@@ -91,7 +97,7 @@
   --button-text-transform: none;
   --button-padding: 0.75rem 1.25rem;
   --button-border: 0;
-  --button-border-radius: var(--radius-1);
+  --button-border-radius: var(--radius-2);
   --button-font-weight: 500;
   --button-box-shadow: var(--shadow-3);
 
@@ -117,6 +123,13 @@
   --card-heading-font-size: var(--fs-800);
   --card-heading-font-family: var(--heading-font-family);
   --card-heading-color-default: var(--color-primary-500);
+
+  /* /// Swiper /// */
+  --swiper-pagination-color: var(--color-accent-300);
+  --swiper-pagination-bullet-size: 9px;
+  --swiper-pagination-bullet-width: 9px;
+  --swiper-pagination-bullet-height: 9px;
+  --swiper-pagination-bottom: 0px;
 }
 
 html {
@@ -133,6 +146,8 @@ body {
 :is(h1, h2, h3, h4, h5) {
   line-height: var(--heading-line-height);
   font-family: var(--heading-font-family);
+  margin: 0;
+  color: var(--color-neutral-900);
 }
 
 h1 {
@@ -140,13 +155,25 @@ h1 {
   color: var(--color-neutral-100);
 }
 
-h2 {
-  color: var(--color-neutral-900);
+.ph-check-square,
+.ph-envelope,
+.ph-phone {
+  color: var(--color-accent-400);
 }
 
-h3 {
-  font-size: var(--font-size-2);
-  color: var(--color-neutral-900);
+.ph-envelope,
+.ph-phone {
+  font-size: 1.25rem;
+  /* background: var(--color-accent-100); */
+  /* padding: 0.25em; */
 }
 
-/* Header and navigation */
+.address__link {
+  text-decoration: none;
+  color: var(--body-font-color);
+  transition: color 250ms ease-out;
+}
+
+.address__link:is(:hover, :focus) {
+  color: var(--color-primary-500);
+}

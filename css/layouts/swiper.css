@@ -1,0 +1,11 @@
+.swiper {
+  max-width: 640px;
+  height: 400px;
+}
+
+.swiper-pagination {
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: var(--swiper-theme-color);
+}
