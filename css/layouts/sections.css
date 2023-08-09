@@ -10,6 +10,16 @@
 .section[data-type='hero'] {
   padding-block: var(--hero-padding-block);
 }
+
+@media (min-width: 45em) {
+  .section[data-type='hero'] {
+    text-align: left;
+  }
+}
+
+.section[data-type='about'] {
+  padding-top: 0;
+}
 .section[data-type='features'] {
   background: linear-gradient(rgba(13, 55, 94, 0.8), rgba(13, 55, 94, 0.8)),
     url(/images/container-ship.jpg);
@@ -47,5 +57,20 @@
   background-image: url(/images/Hexagon.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-inline: var(--section-padding-inline);
+  padding: var(--size-fluid-4);
+  text-align: center;
+}
+
+@media (min-width: 65em) {
+  .section[data-type='cta'] {
+    text-align: left;
+  }
+}
+
+.section[data-type='footer'] {
+  background-image: url(/images/Hexagon-footer.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: var(--size-fluid-4);
+  text-align: center;
 }

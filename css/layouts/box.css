@@ -1,0 +1,9 @@
+.box {
+  display: block;
+  padding: var(--padding);
+  border-width: var(--border-thick);
+  border: var(--border-thick) solid;
+  /* ↓ For high contrast mode */
+  outline: var(--border-thick) solid transparent;
+  outline-offset: calc(var(--border-thick) * -1);
+}

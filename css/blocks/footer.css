@@ -3,8 +3,31 @@
   width: 100%;
   cursor: pointer;
   transition: color 250ms ease-out;
+  font-size: 0.875rem;
 }
 
 .footer__link:is(:hover, :focus) {
+  color: var(--color-accent-400);
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 180px;
+  margin-inline: auto;
+}
+
+.logo[data-type='footer'] {
+  width: 100%;
+}
+
+.footer__social-icon {
+  cursor: pointer;
+  font-size: var(--fs-600);
+  transition: color 250ms ease-out;
+}
+
+.footer__social-icon:hover {
   color: var(--color-accent-400);
 }

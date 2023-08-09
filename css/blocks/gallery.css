@@ -16,14 +16,14 @@
   aspect-ratio: var(--ratio-golden);
   grid-column: 1 / 6;
   grid-row: 1 / 5;
-  transform: translateX(-16px);
+  transform: translateX(-10px);
   z-index: 20;
 }
 
 .gallery img:last-child {
   grid-column: 3 / 7;
   grid-row: 4 / 7;
-  transform: translateX(16px) translateY(16px);
+  transform: translateX(10px) translateY(16px);
   z-index: 10;
 }
 

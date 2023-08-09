@@ -34,7 +34,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  aspect-ratio: var(--ratio-square);
+  /* aspect-ratio: var(--ratio-square); */
   padding: var(--size-400);
   background: rgba(248, 249, 250, 0.1);
   backdrop-filter: blur(4px);
