@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blue Horizon Logistics</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" href="favicon/favicon-16x16.png" type="image/png" sizes="'16x16">
+  <link rel="icon" href="favicon/favicon-32x32.png" type="image/png" sizes="'32x32">
+  <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   <script defer src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -15,14 +19,17 @@
     <div class="container">
       <div class="site-header__inner">
         <img src="/images/logo.svg" alt="" class="logo"><a href="#"></a>
-        <nav class="primary-navigation">
-          <ul class="nav">
-            <li><a href="Benefits">Tracking</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="About">About</a></li>
-            <li><a href="services">Contact</a></li>
+        <nav id="main-navigation">
+          <ul id="navigation-items" class="nav" data-visible="false">
+            <li class="nav__item"><a class="nav__link" href="#benefits">Tracking</a></li>
+            <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
+            <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
           </ul>
         </nav>
+
+        <!-- Mobile Button -->
+        <button id="mobile-nav-toggle" class="mobile__btn" aria-controls="main-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
       </div>
     </div>
 
@@ -33,7 +40,7 @@
             <h1>On-Time Delivery and Expert Care</h1>
             <p class="fs-500">24/7 Customer support: Ensuring your peace of mind every step of the way</p>
             <div class="flex-group">
-              <a href="#services" class="button" data-type="primary">Schedule in 5 minutes</a>
+              <a href="#cta" class="button" data-type="primary">Schedule in 5 minutes</a>
               <a href="#contact" class="button" data-type="accent">Talk to an expert</a>
             </div>
             <div>
@@ -47,29 +54,8 @@
       </div>
     </div>
   </header>
+
   <main>
-    <!-- Hero section
-    <div class="section" data-type="hero">
-      <div class="container">
-        <div class="even-columns">
-          <div class="flow" style="--flow-spacer: 1.5rem">
-            <h1>Reliable Transportation Solutions for Your Business</h1>
-            <p class="fs-500">We understand the importance of timely and reliable delivery, and that's why we pride ourselves on providing exceptional service to all of our customers</p>
-            <div class="flex-group">
-              <a href="#services" class="button" data-type="primary">Our Services</a>
-              <a href="#contact" class="button" data-type="accent">Get quote</a>
-            </div>
-            <div>
-            </div>
-
-          </div>
-          <div>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-
     <!-- Stats section -->
     <section class="section" data-type="translated">
       <div class="container">
@@ -95,9 +81,9 @@
     </section>
 
     <!-- About section -->
-    <section class="section" data-type="about">
+    <section id="about" class="section | reveal" data-type="about">
       <div class="container">
-        <div class="even-columns">
+        <div class="even-columns ">
           <div class="flow my-auto">
             <h3 class="heading-tertiary">About Us</h3>
             <h2 class="heading-secondary">Delivered on Time and in Perfect Condition</h2>
@@ -113,14 +99,14 @@
     </section>
 
     <!-- Services section -->
-    <section class="section | bg-neutral-100" data-type="services">
+    <section id="services" class="section | bg-neutral-100" data-type="services">
       <div class="container">
         <div>
-          <header class="flow | m-block-end-8">
+          <header class="flow | m-block-end-8 | reveal">
             <h3 class="heading-tertiary">Wide Range of Solutions!</h3>
             <h2 class="heading-secondary">Reliable Logistics Solutions, Every Step of the Way</h2>
           </header>
-          <div class="even-columns mt-5">
+          <div class="even-columns mt-5 | reveal">
             <div class="card | flow" data-type="services-card" style="--flow-spacer: 2rem">
               <img class="overflow-hidden" src="/images/full-truckload.jpg" alt="A full truckload shipping">
               <div class="card__content | flow">
@@ -158,10 +144,10 @@
       </div>
     </section>
 
-    <!-- Features section -->
-    <section class="section | bg-primary-500" data-type="features">
+    <!-- Benefits section -->
+    <section id="benefits" class="section | bg-primary-500" data-type="features">
       <div class="container">
-        <div class="even-columns">
+        <div class="even-columns | reveal">
           <div class="my-auto">
             <header class="flow m-bottom-7">
               <h3 class="heading-tertiary text-brand-200">Shipping Made Easy</h3>
@@ -224,7 +210,7 @@
     <!-- Tracking section -->
     <section class="section" data-type="tracking">
       <div class="container">
-        <div class="even-columns">
+        <div class="even-columns | reveal">
           <div class="flow my-auto">
             <div class="flow m-bottom-7">
               <h3 class="heading-tertiary">Tracking and Logistics</h3>
@@ -263,14 +249,14 @@
       <div class="container" data-type="narrow">
         <div>
           <div class="my-auto">
-            <header class="flow m-bottom-8 text-center">
+            <header class="flow m-bottom-8 text-center | reveal">
               <h3 class="heading-tertiary text-brand-200">Hear What Our Clients Have To Say</h3>
               <h2 class="heading-secondary | text-neutral-100">Discover How We Transformed Their Logistics Experience</h2>
             </header>
           </div>
 
           <!-- <div class="container"> -->
-          <div class="swiper mx-auto">
+          <div class="swiper mx-auto | reveal">
             <div class="swiper-wrapper">
               <figure class="testimonial swiper-slide | text-center flex flow text-neutral-300">
                 <img class="testimonial__image border-round mx-auto" src="./images/customers/customer-1.jpg" alt="" width="112" height="112">
@@ -324,7 +310,7 @@
     </section>
 
     <!-- CTA section -->
-    <section class="section">
+    <section id="cta" class="section | reveal">
       <div class="container">
         <div class="section | bg-primary-500 border-radius-md shadow-lg" data-type="cta">
           <div class="even-columns" style="--grid-auto-columns: 1.5fr 1fr">
@@ -343,7 +329,7 @@
     </section>
 
     <!-- Contact Us section -->
-    <section class="section">
+    <section id="contact" class="section | reveal">
       <div class="container">
         <div class="even-columns">
           <header class="flow | m-block-end-8 ">

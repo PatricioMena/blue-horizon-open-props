@@ -87,11 +87,12 @@
   --color-accent-600: var(--orange-11);
 
   /*/// Navigation /// */
-  --site-header-padding: var(--size-1) 0;
+  --site-header-padding: var(--size-3) 0;
   --navigation-gap: var(--size-7);
   --navigation-color: var(--color-neutral-900);
-  --navigation-color-hover: var(--color-primary-700);
+  --navigation-color-hover: var(--color-accent-500);
   --navigation-font-weight: 400;
+  --navigation-background: var(--color-primary-100);
 
   /*/ // Buttons /// */
   --button-font-family: var(--body-font-family);
@@ -101,7 +102,7 @@
   --button-border: 0;
   --button-border-radius: var(--radius-2);
   --button-font-weight: 500;
-  --button-box-shadow: var(--shadow-3);
+  --button-box-shadow: var(--shadow-2);
 
   --button-primary-color: var(--color-neutral-100);
   --button-primary-background: var(--color-primary-500);
@@ -118,7 +119,7 @@
   --card-color-default: var(--body-font-color);
   --card-font-family: var(--body-font-family);
   --card-line-height: 1.5;
-  --card-shadow: var(--shadow-2);
+  --card-shadow: var(--shadow-1);
   --card-border-radius: var(--radius-1);
   --card-border: var(--border-size-1) solid var(--color-neutral-100);
 
@@ -136,6 +137,7 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
